@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { useSession, signIn } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
-import { doCredentialLogin } from '../api/actions';
+import { doCredentialLogin } from './api/actions';
 
 const Login = () => {
   const { data: session } = useSession();
